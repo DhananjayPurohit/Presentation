@@ -67,9 +67,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Presentation on Removing the CMOS Battery</title>
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
     
-    <meta name="description" content="By Devanshu, Dhananjay, Diksha" />
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Bartek Szopka" />
 
     <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
@@ -170,7 +170,7 @@
         Plugins: For first slide, set the autoplay time to a custom 10 seconds.
         
     -->
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500" data-autoplay="100">
+    <div id="bored" class="step slide" data-x="-2900" data-y="-800" data-autoplay="100" data-scale="4">
         <p style="font-size:40px;">Removing the <b>CMOS</b> Battery</p>
         <br>
         <img src="img/CMOSBattery.jpg">
@@ -199,7 +199,7 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
         
     -->
-    <div class="step slide" data-x="0" data-y="-1500">
+    <div class="step slide" data-x="-500" data-y="-1600">
         <p style="font-size:40px;">What would you do when the battery of your <b>wrist watch</b> be discharged? </p>
         <br>
         <img src="img/WristWatch.jpg" style="width:700px; height:auto;">
@@ -207,7 +207,7 @@
         <span style="margin-left:700px;">| 1</span>
     </div>
 
-    <div class="step slide" data-x="1000" data-y="-1500">
+    <div class="step slide" data-x="500" data-y="-1600">
         <p style="font-size:40px;">What would you do when the watch battery of your <b>PC</b> be discharged?</p>
         <br>
         <img src="img/CMOSFailure.jpg" style="width:800px; height:auto;">
@@ -225,8 +225,8 @@
         down (4 times) to make it back to its correct size.
         
     -->
-    <div id="big" class="step" data-x="0" data-y="0" data-scale="4">
-        <p>What is<b>CMOS</b> <span class="thoughts">Battery</span></p>
+    <div id="big" class="step" data-x="-100" data-y="-300" data-scale="3" >
+        <p>What is <b class="rotating">CMOS</b> <span class="thoughts">Battery?</span></p>
         <span style="margin-left:300px;">| 3</span>
     </div>
 
@@ -238,7 +238,7 @@
         element should be rotated by 90 degrees clockwise.
         
     -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+    <div id="its" class="step" data-x="-100" data-y="2000" data-rotate="90" data-scale="3">
         <p>A <b>battery</b> that maintains the time, date, hard disk and other configuration settings in the <b>CMOS memory</b>.
             <b>CMOS</b> is short for Complementary <b>Metal-Oxide Semiconductor</b>. <b>CMOS</b> is an on-board, battery powered semiconductor 
             chip inside computers that stores information.
@@ -246,9 +246,17 @@
         <span style="margin-left:300px;">| 4</span>
     </div>
 
-    <div id="title" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+    <div id="" class="step" data-x="-2600" data-y="1800" data-rotate="0" data-scale="3">
+        <div>
+            <img src="img/cmos.jpg" style="float:left; margin:20px; width:400px; height:auto;">
+        <p >The picture shows an example of the most common CMOS coin cell battery (Panasonic CR 2032 3V) used to power the CMOS memory.</p>
+    </div>
+    <span style="margin-left:300px;">| 5</span>
+    </div>
+
+    <div id="title" class="step" data-x="-3200" data-y="4000" data-rotate="180" data-scale="3">
         <p>How long does the <b>CMOS battery</b> last?</p>
-        <span style="margin-left:300px;">| 5</span>
+        <span style="margin-left:300px;">| 6</span>
     </div>
 
     <!--
@@ -260,10 +268,23 @@
         positioned far away from us (by 3000px).
         
     -->
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+    <div id="tiny" class="step" data-x="-2600" data-y="4000" data-z="-3000" data-rotate="300" data-scale="1">
         <p>The standard lifetime of a CMOS battery is around <b>10 Years</b>.</p>
-        <span style="margin-left:300px;">| 6</span>
+        <span style="margin-left:300px;">| 7</span>
     </div>
+
+    <div id="" class="step" data-x="-1500" data-y="3800" data-z="0" data-rotate="-90" data-scale="3">
+            <p>History of <b>CMOS</b></p>
+            <span style="margin-left:300px;">| 8</span>
+        </div>
+
+    <div id="" class="step" data-x="-1600" data-y="4000" data-z="-6000" data-rotate="300" data-scale="0.5">
+                <p style="font-size:40px;">The Motorola 146818 chip was the first RTC and CMOS RAM chip to be used in early IBM computers;
+                     capable of storing a total of 64 bytes of data. Since the system clock used 14 bytes of RAM,
+                      this left an additional 50 bytes for storing system settings. Today, most computers have moved 
+                      the settings from CMOS and integrated them into the southbridge or Super I/O chips.</p>
+                <span style="margin-left:300px;">| 9</span>
+            </div>
 
     <!--
         
@@ -297,10 +318,10 @@
         <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
     </div>
 
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+    <!-- <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
         <p>want to know more?</p>
         <q><a href="http://github.com/impress/impress.js">use the source</a>, Luke!</q>
-    </div>
+    </div> -->
 
     <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
         <p>one more thing...</p>
