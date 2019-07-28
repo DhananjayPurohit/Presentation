@@ -187,13 +187,17 @@ a:focus {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0.1;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
     -ms-transition:     opacity 1s;
     -o-transition:      opacity 1s;
     transition:         opacity 1s;
+}
+
+#opac .impress-enabled .step {
+    opacity: 0.0000001;
 }
 
 .impress-enabled .step.active { opacity: 1 }
@@ -555,6 +559,12 @@ body.impress-mouse-timeout div#impress-toolbar {
 */
 body.impress-mouse-timeout {
     cursor: none;
+}
+
+#step1, #step2, #step3, #step4, #step5, #step6{
+    background-color: white;
+    width: 700px;
+    height: 700px;
 }
 
 
